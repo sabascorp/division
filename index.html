@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabla de divisiones</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="title-container">
+      <img src="imagenes/eca.png" class="logo-izquierda" alt="Logo Izquierda">
+      <h1>Tabla de divisiones</h1>
+      <img src="imagenes/globalgoals.png" class="logo-derecha" alt="Logo Derecha">
+    </div>
+    <div class="description-container">
+      <p>En esta práctica, deberás calcular la tabla de divisiones de números aleatorios con divisores del 1 al 12 y dividendos hasta 144. ¡Buena suerte!</p>
+    </div>
+    <div id="nameInputContainer" class="name-input-container">
+      <input type="text" id="userNameInput" placeholder="Ingrese su nombre">
+      <button id="submitNameButton" class="start-button">Enviar</button>
+    </div>
+    <div id="practiceContainer" class="hidden">
+      <div class="division-container">
+        <div id="division" class="division"></div>
+        <br> <br>
+      </div>
+      <input type="text" id="answer" class="answer" placeholder="Ingrese su respuesta" disabled>
+      <div id="countdown" class="countdown"></div>
+      <button id="startButton" class="start-button" disabled>Iniciar</button>
+      <button id="resetButton" class="reset-button">Reiniciar</button>
+      <div class="progress-container">
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
+      <div id="result" class="result"></div>
+    </div>
+    <table id="leaderboard" class="leaderboard hidden">
+      <caption id="leaderboardCaption">Tabla de Liderazgo</caption>
+      <thead>
+        <tr>
+          <th>Fecha y Hora</th>
+          <th>Aciertos</th>
+          <th>Errores</th>
+          <th>Intentos</th>
+          <th>Diferencia</th>
+          <th>Clasificación</th>
+        </tr>
+      </thead>
+      <tbody id="leaderboardBody"></tbody>
+    </table>
+  </div>
+</body>
+</html>
